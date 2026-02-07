@@ -5,86 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Venta PCs </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <header>
-        <img src="img/LOGO.webp" alt="">
-        
-        <h1>Venta PCs</h1>
+        <img src="img/logo.webp" alt="">
 
-        <nav>
+        <h1>PCs</h1>
 
-            <ul>
-                <li><a href="#" class="activo">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/contactos.html">Contactos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link activo" href="#">Inicio</a>
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link" href="./pages/notebook.html">Notebook</a>
+                        <a class="nav-link" href="./pages/consolas.html">Consolas</a>
+                        <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
 
     <main>
 
-        <section>
-            <h2>Arma tu PC</h2>
+        <div></div>
 
-            <img src="./img/pc.webp" alt="PC">
-        </section>
-
-
-        <section>
-            <h2>Ofertas</h2>
-
-            <div>
-                <h3>Oferta del dia</h3>
-                <img src="./img/silla.jpg" alt="Silla">
-                <p>Descripcion</p>
-                <h4>Precio</h4>
-            </div>
-
-            <div>
-                <div>
-                    <img src="./img/i9.jpg" alt="¨Procesador">
-                    <p>Descripcion</p>
-                    <h4>Precio</h4>
+        <section class="section1">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner row-md-10">
+                    <div class="carousel-item active">
+                        <img src="./img/ej1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/ej2.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/ej4.jpg" class="d-block w-100" alt="">
+                    </div>
                 </div>
-
-                <div>
-                    <img src="./img/pad.jpg" alt="Mouse Pad">
-                    <p>Descripcion</p>
-                    <h4>Precio</h4>
-                </div>
-
-                <div>
-                    <img src="./img/placa.jpg" alt="Placa de video">
-                    <p>Descripcion</p>
-                    <h4>Precio</h4>
-                </div>
-
             </div>
         </section>
 
+        <h2>Productos destacados</h2>
+        <section class="section2">
 
-        <section>
-            <h2>Comentarios de clientes</h2>
-
-            <div>
-                <h3> Santiago Rodriguez</h3>
-                <p>1er ejemplo</p>
+            <div class="card mb-3 border-black" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./img/silla.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">Silla Gamer Razer Iskur Tela 2D</p>
+                            <h3>$505.250</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <h3> SJuan Martinez</h3>
-                <p>2do ejemplo</p>
+            <div class="card mb-3 border-black" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./img/i9.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">Procesador Intel Core i9 14900K</p>
+                            <h3 class="card-title">$600.000</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <h3> Maria Gonzalez</h3>
-                <p>3er ejemplo</p>
+            <div class="card mb-3 border-black" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./img/pad.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">Mouse pad Logitech G</p>
+                            <h3 class="card-title">$250.000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 border-black" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="./img/placa.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text">Placa de Video ASUS DUAL</p>
+                            <h3 class="card-title">$860.000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section3">
+            <h2>categorias</h2>
+            <div class="ej">
+                <figure class="ej1 ej2">
+                    <img src="./img/procesadores.jpg" alt="">
+                    <figcaption>Procesadores</figcaption>
+                </figure>
+                <figure class="ej1">
+                    <img src="./img/perifericos.jpg" alt="">
+                    <figcaption>Perifericos</figcaption>
+                </figure>
+                                <figure class="ej1">
+                    <img src="./img/placasdevideo.webp" alt="">
+                    <figcaption>Placas de video</figcaption>
+                </figure>
+                <figure class="ej1">
+                    <img src="./img/monitores.jpg" alt="">
+                    <figcaption>Monitores</figcaption>
+                </figure>
+                <figure class="ej1">
+                    <img src="./img/mandos.png" alt="">
+                    <figcaption>Mandos</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -94,27 +152,33 @@
     <footer>
 
         <div>
-            <h4>Redes Sociales</h4>
+            <div>
+                <h4>Seguinos en</h4>
 
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Tiktok</li>
-            </ul>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Ayuda</h4>
+
+                <ul>
+                    <li>Crear usuario</li>
+                    <li>Iniciar sesion</li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h4>Mi cuenta</h4>
-
-            <ul>
-                <li>Crear usuario</li>
-                <li>Iniciar sesion</li>
-            </ul>
-        </div>
-
-        <p>©Leandro Polemann</p>
+        <p>Leandro Polemann</p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
