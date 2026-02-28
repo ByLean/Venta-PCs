@@ -1,0 +1,74 @@
+.carousel-indicators {
+    background-color: rgb(255, 0, 0);
+    width: 1200px;
+}
+
+.carousel {
+    width: 1200px;
+}
+
+.section1,
+.section3 {
+    margin: 100px;
+}
+
+.section3 h2::before {
+    content: 'Explora nuestras ';
+    font-size: 30px;
+    color: gray;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.section2 div div {
+    padding: 5px;
+}
+
+.ej {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.ej1 {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.ej1 img {
+    height: 90%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.ej1 figcaption {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.ej2 {
+    grid-row: span 2;
+    grid-column: span 2;
+    width: 420px;
+    height: 420px;
+
+    img {
+        height: 95%;
+    }
+
+    figcaption {
+        height: 5%;
+    }
+}

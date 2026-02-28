@@ -1,0 +1,39 @@
+@use '../utilities/variables' as *;
+
+footer {
+    background: $bg-footer;
+    transition: 0.5s;
+    background-size: 200% auto;
+    outline: none;
+    border: none;
+
+    p::before {
+        content: '©';
+    }
+
+    p {
+        height: 20px;
+        background-color: white;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        color: white;
+        border: 2px solid red;
+    }
+
+    div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: none;
+    }
+}
+
+footer:hover {
+    background-position: right center;
+    text-decoration: none;
+}

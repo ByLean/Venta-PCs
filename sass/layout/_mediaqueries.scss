@@ -1,0 +1,38 @@
+@media (max-width: 1550px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        flex-direction: column;
+    }
+
+    .flex-mio {
+        flex-direction: column;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel {
+        width: 450px;
+    }
+
+    .section2 div div div img {
+        width: 180px;
+    }
+
+    .ej {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    aside {
+        width: 90%;
+    }
+
+}

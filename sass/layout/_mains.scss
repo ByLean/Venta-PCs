@@ -1,0 +1,13 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+main {
+    display: flex;
+    @include flex-valores(column, center);
+    background-color: $bg-main-index;
+}
+
+.flex-mio {
+    @include flex-valores(row, start);
+    background-color: $bg-pages-productos;
+}
