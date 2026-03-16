@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ header {
   outline: none;
   border: none;
 }
+
 header img {
   width: 150px;
   border-radius: 100%;
@@ -53,7 +55,6 @@ header:hover {
 }
 
 main {
-  display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,9 +133,11 @@ main {
   width: 420px;
   height: 420px;
 }
+
 .ej2 img {
   height: 95%;
 }
+
 .ej2 figcaption {
   height: 5%;
 }
@@ -146,15 +149,31 @@ aside {
   width: 200px;
 }
 
+aside form fieldset {
+  display: grid;
+  grid-template-columns: 17px 100px;
+  grid-template-rows: 1fr 1fr;
+}
+
+aside form fieldset input {
+  width: 15px;
+  height: 15px;
+}
+
+aside form input {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  background-color: orangered;
+  color: white;
+  width: 100px;
+  height: 40px;
+}
+
 .productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 50px;
   gap: 10px;
-}
-
-section h2 {
-  margin: 20px;
 }
 
 .productos div {
@@ -167,9 +186,11 @@ section h2 {
   border: 2px solid black;
   border-radius: 10px;
 }
+
 .productos div p {
   height: 30px;
 }
+
 .productos div button {
   border: 3px solid rgb(255, 255, 255);
   border-radius: 7px;
@@ -181,25 +202,63 @@ section h2 {
   color: white;
   transition: transform 0.4s, background-color 0.4;
 }
+
 .productos div button:hover {
   transform: translateY(-5px);
   background-color: rgb(141, 39, 2);
 }
+
 .productos div button:active {
   background-color: rgb(65, 28, 15);
   color: rgb(107, 107, 107);
 }
+
 .productos div img {
   height: 250px;
+}
+
+section h2 {
+  margin: 20px;
 }
 
 .datos {
   margin: 100px;
 }
+
 .datos form {
-  display: grid;
   margin: 50px;
   gap: 20px;
+}
+
+.datos form fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.datos form fieldset legend {
+  grid-column: span 2;
+  display: block;
+  text-align: center;
+}
+
+.datos form fieldset label {
+  display: block;
+  text-align: center;
+}
+
+.datos form fieldset input {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 7px;
+}
+
+.datos form fieldset .enviar {
+  grid-column: span 2;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  background-color: orangered;
+  color: white;
 }
 
 footer {
@@ -209,13 +268,16 @@ footer {
   outline: none;
   border: none;
 }
+
 footer p::before {
   content: "©";
 }
+
 footer p {
   height: 20px;
   background-color: white;
 }
+
 footer div {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -223,6 +285,7 @@ footer div {
   color: white;
   border: 2px solid red;
 }
+
 footer div div {
   display: flex;
   flex-direction: column;
@@ -241,28 +304,46 @@ footer:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 520px) {
   header {
     flex-direction: column;
   }
+
   .flex-mio {
     flex-direction: column;
   }
+
+  .flex-mio section {
+    width: 100%;
+  }
+
   .productos {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
+
   .carousel {
     width: 450px;
   }
+
   .section2 div div div img {
     width: 180px;
   }
+
   .ej {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
   }
+
   aside {
     width: 90%;
+  }
+
+  aside form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 17px 100px);
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 

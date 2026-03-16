@@ -22,11 +22,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+
+    div div {
+        padding: 5px;
+    }
 }
 
-.section2 div div {
-    padding: 5px;
-}
 
 .ej {
     display: grid;
@@ -42,13 +43,14 @@
     margin: 10px;
     border-radius: 10px;
     background-color: black;
+
+    img {
+        height: 90%;
+        width: 100%;
+        border-radius: 3px;
+    }
 }
 
-.ej1 img {
-    height: 90%;
-    width: 100%;
-    border-radius: 3px;
-}
 
 .ej1 figcaption {
     color: rgb(255, 255, 255);

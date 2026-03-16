@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contactos </title>
+
+    <meta name="description" content="Contactanos para enterarte de nuestras rebajas">
+    <meta name="author" content="Leandro Polemann">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title> Venta Pcs ~ Contactanos </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,7 +18,7 @@
 <body>
 
     <header>
-        <img src="../img/logo.png" alt="">
+        <img src="../img/logo.png" alt="Logo">
 
         <h1>PCs</h1>
 
@@ -41,55 +46,29 @@
 
     <main>
         <section class="datos">
-            <h2>Completa tus datos</h2>
+            <h2>Contactanos</h2>
             <form>
-
-
                 <fieldset>
-                    <legend>Datos basicos</legend>
+                    <legend>Completa tus datos</legend>
 
-                    <label for="name_form">Nombre</label>
+
+
+                    <label for="name_form">Nombre y Apellido</label>
                     <input type="text" id="name_form">
 
-                    <label for="surname_form">Apellido</label>
-                    <input type="text" id="surname_form">
 
-                    <label for="dni_datos">DNI</label>
-                    <input type="text" id="dni_datos">
-                </fieldset>
 
-                <fieldset>
-                    <legend>Elegi una consola</legend>
+                    <label for="dni_form">DNI</label>
+                    <input type="text" id="dni_form">
 
-                    <label for="Sony">Sony</label>
-                    <input type="radio" id="Sony" name="choose2">
 
-                    <label for="Xbox">Xbox</label>
-                    <input type="radio" id="Xbox" name="choose2">
+                    <label for="telefono_form">Nuemero Telefonico</label>
+                    <input type="text" id="telefono_form">
 
-                    <label for="Nin">Nintendo</label>
-                    <input type="radio" id="Nin" name="choose2">
-                </fieldset>
+                    <label for="mail_form">Correo Electronico</label>
+                    <input type="text" id="mail_form">
 
-                <fieldset>
-                    <legend>Elegi un sistema operativo</legend>
-
-                    <label for="10_form">Windows10</label>
-                    <input type="radio" id="10_form" name="choose_one">
-
-                    <label for="11_form">Windows11</label>
-                    <input type="radio" id="11_form" name="choose_one">
-
-                    <label for="Linux_form">Linux</label>
-                    <input type="radio" id="Linux_form" name="choose_one">
-                </fieldset>
-
-                <fieldset>
-                    <legend>Escribenos tu comentario</legend>
-
-                    <textarea name="" id=""></textarea>
-
-                    <input type="submit">
+                    <input class="enviar" type="submit">
                 </fieldset>
             </form>
         </section>

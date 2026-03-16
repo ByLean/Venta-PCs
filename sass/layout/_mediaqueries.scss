@@ -11,10 +11,15 @@
 
     .flex-mio {
         flex-direction: column;
+
+        section {
+            width: 100%;
+        }
     }
 
     .productos {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .carousel {
@@ -33,6 +38,15 @@
 
     aside {
         width: 90%;
+
+        form {
+
+            fieldset {
+                display: grid;
+                grid-template-columns: repeat(2, 17px 100px);
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+        }
     }
 
 }

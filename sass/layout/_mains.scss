@@ -2,7 +2,6 @@
 @use '../utilities/mixins' as *;
 
 main {
-    display: flex;
     @include flex-valores(column, center);
     background-color: $bg-main-index;
 }
